@@ -1,0 +1,715 @@
+<html>
+    <head>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
+        
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="cafe.css ">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body onload="myfunction()">
+        <div onload="typewriter" class="" id="loaderdiv">
+           <center> <img src="img/ccup.png" id="loaderimg"></center>
+        </div>
+        
+        <div id="cafe" style="display: none;">
+        <div class="container">
+         <div id="btntop" class="text-right fixed-bottom">
+        <button id="btnfortop" onclick="gontop()"  class="btn btn-warning mr-3 mb-3">Top</button>
+         </div>
+        </div>
+
+        <section id="first" class="container-fluid"> 
+           
+            <div id="topbar" class="d-flex align-items-center sticky-top">
+                <div class="container d-flex">
+                  <div class="contact-info mr-auto">
+                    <i class="icofont-phone"></i> +1 5589 55488 55
+                    <span class="d-none d-lg-inline-block"><i class="icofont-clock-time icofont-rotate-180"></i> Mon-Sat: 11:00 AM - 23:00 PM</span>
+                  </div>
+                  
+                </div>
+              </div>     
+       <header class="container-fluid fixed-top" id="header">
+
+         <nav class="navbar navbar-expand-md " >
+
+            <a href="#" style="font-size: 30px;" class="navbar-brand">CORE CAFE</a>
+            <button class="navbar-toggler navbar-dark" data-toggle="collapse" data-target="#cl">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="cl">
+            <span class="mr-auto"></span>
+            <ol class="navbar-nav">
+
+                <li class="nav-item"><a href="#first" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link ">About</a></li>
+                <li class="nav-item"><a href="#second" class="nav-link">Menu</a></li>
+                <li class="nav-item"><a href="#fourth" class="nav-link">Specials</a></li>
+                <li class="nav-item"><a href="#fifth" class="nav-link">Events</a></li>
+                <li class="nav-item"><a href="#seventh" class="nav-link">Contacts</a></li>
+
+                <li class="nav-item"><button id="btn0" class="btn nav-link" data-toggle="section" data-target="sixth">Book A Table</button></li>
+
+                
+            </ol>
+           </div>
+         </nav>
+
+       </header>
+     <script>
+          var btn = document.getElementById("btntop");
+       window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("header").style.background = "rgba(0, 0, 0, 0.85)";
+                document.getElementById("header").style.transition = "0.5s";
+                btn.style.display ="block";
+            } else {
+                document.getElementById("header").style.background = "rgba(12, 11, 9, 0.6)";
+                document.getElementById("header").style.transition = "0.5s";
+                btn.style.display ="none";
+            }
+            }
+
+            function gontop(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+            var loader;
+            function myfunction(){
+                loader = setTimeout(showPage,3000);
+            }
+
+            function showPage() {
+                document.getElementById("loaderdiv").style.display = "none";
+                document.getElementById("cafe").style.display = "block";
+             }
+
+            
+                 var i=0;
+                 var str = "Be A Coffee Lover...";
+                 var speed = 50;
+
+                 function typewriter(){
+
+                    if(i<str.length)
+                    {
+                        document.getElementById("demo").innerHTML += str.charAt(i);
+                        i++;
+                        setTimeout(typewriter,speed);
+                    }
+
+                 }
+    </script>
+       
+       <br><br><br>
+        <div class="container" id="div1">
+ 
+          <h1 class="m">Welcome to <span>CORE CAFE</span></h1>
+          <h3>Delivering great food for more than 18 years!</h3>
+          <br><br>
+          <button class="btn " id="btn1">Our Menu</button>
+          <button class="btn " id="btn2">Book A Table</button>
+        </div><br><br>
+        <br><br><br><br><br><br><br><br>
+          
+       </section>
+
+       <section id="about"><br><br><br>
+           <div class="row container-fluid">
+             <div class="p-5 col-md-6 container-fluid">
+               <h2>CAFE that makes you special and let you convert into introvert..</h2>
+               <h4><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, fuga. Explicabo ex tempore quos.</h4></i><br>
+               <ul class="fa-ul" style="list-style-type: none;">
+                   <li style="font-size: large;"><span class="fa-li">  <i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                   <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                   <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita cupiditate praesentium excepturi rerum adipisci.</li><br>
+                   <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptate. Cumque et saepe ipsum fugit, numquam totam praesentium ducimus voluptas voluptatem sint, reprehenderit exercitationem, esse iste omnis? Necessitatibus, repellendus magnam?</h5>
+                   
+               </ul>
+             </div>
+             <div class="p-5 col-md-6 container">
+               <img src="img/about.jpg" class="img-fluid" style="border: 5px solid grey;">
+            </div>
+           </div>
+       </section>
+
+       <section id="third" class="container-fluid" style="background-color: #14120d">
+        <br><br><br><br>
+        <div class="container">
+        <h6 style="color: white;">WHY US</h6>
+        <h1 style="color: rgb(233, 193, 119);">Why Choose our Cafe</h1><br><br>
+    </div>
+      <div class="container">
+        <div class="card-deck container" >
+    
+            <div id="card1" class="card" style=" width: 370px; border: none;">
+                <div class="card-body" >
+                    <div class="card-title"><h1>01</h1></div><br>
+                    <div class="card-subtitle"><h2>Environment</h2></div><br>
+                    <div class="card-text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi hic non repellendus fuga alias facilis.</p></div><br>
+                </div>
+
+            </div>
+            <div id="card1" class="card" style=" width: 370px;border: none;">
+                <div class="card-body">
+                    <div class="card-title"><h1>02</h1></div><br>
+                    <div class="card-subtitle"><h2>Environment</h2></div><br>
+                    <div class="card-text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi hic non repellendus fuga alias facilis.</p></div><br>
+                </div>
+
+            </div>
+            <div id="card1" class="card" style=" width: 370px;border: none;">
+                <div class="card-body">
+                    <div class="card-title"><h1>03</h1></div><br>
+                    <div class="card-subtitle"><h2>Environment</h2></div><br>
+                    <div class="card-text"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi hic non repellendus fuga alias facilis.</p></div><br>
+                </div>
+
+            </div>
+
+        </div>
+    </div><br><br><br><br>
+
+       </section>
+       <section id="second">
+        <br><br><br>
+           <div class="container section-title">
+
+            <h5 style="color: white;">MENU</h5>
+            <h1 style="color: rgb(233, 193, 119);">Check Our Tasty Menu</h1><br>
+
+
+           </div>
+           
+               <ol class="nav justify-content-center">
+                 <li class="nav-item"><a class="nav-link" href="#">All</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#">Starters</a></li>
+                 <li class="nav-item"><a class="nav-link" href="#">Speciality</a></li>
+               </ol><br><br><br>
+           
+               <div class="container-fluid row ">
+
+                <div class=" col-md-6 ml-3">
+                    <div class="media  p-3 ">
+                        <img src= "img/icedc.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Iced Coffee<span>  ------------------------$2.95</span></h4>
+                            <p><i>Lorem, deren, trataro, filede, nerada</i></p>
+                        </div>
+                    </div>
+                    <div class="media  p-3 ">
+                        <img src= "img/affogato.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Affogato<span>  ---------------------------$3.15</span></h4>
+                            <p><i>Fresh spinach, crisp romaine, tomatoes, and Greek olives</i></p>
+                        </div>
+                    </div>
+                    <div class="media  p-3 ">
+                        <img src= "img/frappe.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Frappe<span>  -----------------------------$2.75</span></h4>
+                            <p><i>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</i></p>
+                        </div>
+                    </div>
+                    <div class="media  p-3 ">
+                        <img src= "img/irishcoffee.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Irish Coffee<span>  ------------------------$3</span></h4>
+                            <p><i>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</i></p>
+                        </div>
+                    </div>
+
+                    <div class="media  p-3 ">
+                        <img src= "img/latte.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Latte<span>  -------------------------------$3.25</span></h4>
+                            <p><i>Fresh spinach with mushrooms, hard boiled egg, and warm bacon vinaigrette</i></p>
+                        </div>
+                    </div>
+                
+
+                </div>
+
+                <div class="col-md-5">
+
+                    <div class="media  p-3 ">
+                        <img src= "img/Cappuccino.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Cappuccino<span>  ---------------$3.5</span></h4>
+                            <p><i>Lorem, deren, trataro, filede, nerada</i></p>
+                        </div>
+                    </div>
+                    <div class="media  p-3 ">
+                        <img src= "img/caffeama.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Coffee<span>  --------------------$2.15</span></h4>
+                            <p><i>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</i></p>
+                        </div>
+                    </div>
+                    <div class="media  p-3 ">
+                        <img src= "img/flatwhite.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Flat White<span>  ----------------$2.35</span></h4>
+                            <p><i>Lorem, deren, trataro, filede, nerada</i></p>
+                        </div>
+                    </div>
+
+                    <div class="media  p-3 ">
+                        <img src= "img/dalgona.jpg" class="rounded-circle img-fluid mw-10" style="height: 80px; width: 90px;">
+                        <div class="media-body ml-3">
+                            <h4>Dalgona<span>  ------------------$1.85</span></h4>
+                            <p><i>A delicate crab cake served on a toasted roll with lettuce and tartar sauce</i></p>
+                        </div>
+                    </div>
+                </div>
+
+               </div><br><br><br><br>
+
+       </section>
+       <section id="fourth">
+           <br><br><br><br>
+           <div class="container section-title" id="fourth_one">
+             
+              <h5>SPECIALS</h5>
+              <h1>Check Your Specials</h1><br>
+
+           </div><br><br>
+             
+           <div class="container-fluid">
+
+              <div class="row">
+
+                <nav class="col-md-2 ml-5">
+                   <br><br>
+                   <ul class="nav nav-tabs flex-column">
+                     <li class="nav-item "><a class="nav-link active" data-toggle="tab" href="#section1" >CAPPUCCIUNO</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#section2" >FRAPPE</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#section3" >LATTE</a></li>
+                     <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#section4" >MOCHA</a></li>
+                     
+                   </ul>
+
+                </nav>
+                <div class="col-md-9 ml-3" id="paramain">
+                 <div class="tab-content">
+                  <div class="tab-pane active" id="section1">
+                    <div class="row">
+                     <div class="col-md-7">  
+                    <h1>CAPPUCCIUNO</h1>
+                    <h5><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium veritatis rem cupiditate inventore eligendi eaque qui amet optio cumque at, nulla neque culpa!</i></h5><br>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum id quod optio nam. Obcaecati ipsum est eaque velit exercitationem, veniam nobis nisi voluptate asperiores voluptatum quibusdam quod neque tempora.</p>
+                     </div>
+                     <div class="col-md-5">
+                        <img src="img/Cappuccino1.png" class="img-fluid">
+                     </div>
+                  </div>
+                </div>
+
+                  <div class="tab-pane" id="section2">
+                    <div class="row">
+                        <div class="col-md-7">  
+                    <h1>FRAPPE</h1>
+                    <h5><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium veritatis rem cupiditate inventore eligendi eaque qui amet optio cumque at, nulla neque culpa!</i></h5><br>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum id quod optio nam. Obcaecati ipsum est eaque velit exercitationem, veniam nobis nisi voluptate asperiores voluptatum quibusdam quod neque tempora.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="img/frappe.png" class="img-fluid">
+                 </div>
+                </div>
+                </div>
+
+                  <div class="tab-pane" id="section3">
+                    <div class="row">
+                        <div class="col-md-7">  
+                    <h1>LATTE</h1>
+                    <h5><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium veritatis rem cupiditate inventore eligendi eaque qui amet optio cumque at, nulla neque culpa!</i></h5><br>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum id quod optio nam. Obcaecati ipsum est eaque velit exercitationem, veniam nobis nisi voluptate asperiores voluptatum quibusdam quod neque tempora.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="img/latte.png" class="img-fluid">
+                 </div>
+                </div>
+                </div>
+
+                  <div class="tab-pane"id="section4">
+                    <div class="row">
+                     <div class="col-md-7">  
+                    <h1>MOCHA</h1>
+                    <h5><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium veritatis rem cupiditate inventore eligendi eaque qui amet optio cumque at, nulla neque culpa!</i></h5><br>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ipsum id quod optio nam. Obcaecati ipsum est eaque velit exercitationem, veniam nobis nisi voluptate asperiores voluptatum quibusdam quod neque tempora.</p>
+                   </div>
+                    <div class="col-md-5">
+                        <img src="img/moch.png" class="img-fluid">
+                     </div>
+                    </div>
+                   </div>
+                 </div>
+                </div>
+
+              
+
+              </div>
+
+           </div>
+          
+       <br><br><br><br><br>
+       </section>
+
+       <section id="fifth" >
+         <br><br>
+          <div class="container">
+ 
+             <h5 style="color: white;">EVENTS</h5>
+             <h1>Organize your events in our Cafe</h1> 
+
+          </div><br><br><br>
+         <div class="container " id="slidediv" >
+          <div id="slider" class="carousel slide container p-5" data-ride="carousel" data-interval="2000">
+
+            <ol class="carousel-indicators" >
+              <li data-target="#slider" data-slide-to="0" class="active"></li>
+              <li data-target="#slider" data-slide-to="1"></li>
+              <li data-target="#slider" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row ">
+                      <div class="col-md-6">
+                         <img src="img/event-custom.jpg" class="img-fluid">
+                      </div>
+                      <div class="col-md-6">
+
+                        <h2>CUSTOM PARTIES</h2>
+                        <h4><i>$120</h4></i><br>
+                        <ul class="fa-ul" style="list-style-type: none;">
+                            <li style="font-size: large;"><span class="fa-li">  <i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                            <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat..</li><br><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptate. Cumque et saepe ipsum fugit, numquam totam praesentium ducimus.</p>
+                            
+                        </ul>
+
+                      </div>
+                    </div>
+                </div>
+                    <div class="carousel-item">
+                    <div class="row ">
+                        <div class="col-md-6">
+                           <img src="img/event-birthday.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+  
+                          <h2>BIRTHDAY PARTIES</h2>
+                          <h4><i>$175</h4></i><br>
+                          <ul class="fa-ul" style="list-style-type: none;">
+                              <li style="font-size: large;"><span class="fa-li">  <i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                              <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                              <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat..</li><br><br>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptate. Cumque et saepe ipsum fugit, numquam totam praesentium ducimus.</p>
+                              
+                          </ul>
+  
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="row ">
+                        <div class="col-md-6">
+                           <img src="img/event-private.jpg" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+  
+                          <h2>PRIVATE PARTIES</h2>
+                          <h4><i>$199</h4></i><br>
+                          <ul class="fa-ul" style="list-style-type: none;">
+                              <li style="font-size: large;"><span class="fa-li">  <i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                              <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                              <li style="font-size: large;"><span class="fa-li"><i class="material-icons">check_circle</i></span>Ullamco laboris nisi ut aliquip ex ea commodo consequat..</li><br><br>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, voluptate. Cumque et saepe ipsum fugit, numquam totam praesentium ducimus.</p>
+                              
+                          </ul>
+  
+                        </div>
+                      </div>
+                      </div>
+
+                </div>
+                 
+            </div>
+        </div>
+
+          <br><br><br><br><br><br>
+
+       </section>
+
+       <section id="sixth"><br><br><br>
+
+         <div class="container">
+             <h5 style="color:white">RESERVATION</h5>
+             <h1 style="color: rgb(233, 193, 119);">Book A Table</h1>
+         </div>
+         <br><br>
+
+         <div class="container">
+             <form class="for">
+
+                <div class="form-row">
+                 <div class="col">   
+                <input type="text" class="form-control mb-2 mr-sm-2" placeholder="YOUR NAME" required>
+            </div>
+            <div class="col">
+                <input type="email" class="form-control" placeholder="YOUR EMAIL">
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="YOUR PHONE" required>
+            </div>
+                </div><br>
+                <div class="form-row">
+                    <div class="col">   
+                   <input type="text" class="form-control mb-2 mr-sm-2" placeholder="DATE" required>
+               </div>
+               <div class="col">
+                   <input type="email" class="form-control" placeholder="TIME" required>
+               </div>
+               <div class="col">
+                   <input type="number" class="form-control" placeholder="NO. OF PEOPLE" required>
+               </div>
+                   </div><br><br>
+
+                  <textarea class="form-control" rows="5" placeholder="MESSAGE"></textarea><br>
+
+                <center><button type="submit" class="btn p-3">Book A Table</button></center>
+
+             </form>
+             
+
+             </textarea>
+         </div>
+           <br><br>
+       </section>
+
+       <section id="owners"><br><br><br>
+
+        <div class="container">
+            <h5 style="color:white">OWNERS</h5>
+            <h1 style="color: rgb(233, 193, 119);">CORE CAFE Owners</h1>
+        </div>
+        <br><br>
+
+        <div class="container">
+         
+            <div class="card-deck">
+
+            <div class="card text-white" id="maincard" style="width: 350px; height: 400px;">
+                <div class="frontcard">
+                <img src="img/chefs-1.jpg"  class="card-img img-fluid" style="width: 350px; height: 400px;">
+                </div>
+                <div class="card-img-overlay" id="innercard">
+                   <br> <h2 class="card-title text-center">William Anderson</h2>
+                    <p class="card-text text-center"><i style="color: white;">Cook</i></p><br>
+                <div class="card-link text-center" id="socialicons"> 
+                    <a class="card-link" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                  </div>
+                </div>
+               <!-- <div class="card-body">
+                   
+               </div> -->
+            </div>
+
+            <div class="card text-white" id="maincard">
+                <div class="frontcard">
+                <img src="img/chef-3.jpg"  class="card-img img-fluid" style="width: 350px; height: 400px;">
+                </div>
+                <div class="card-img-overlay" id="innercard">
+                   <br> <h2 class="card-title text-center">Walter White</h2>
+                    <p class="card-text text-center"><i style="color: white;">Master Chef</i></p><br>
+                <div class="card-link text-center" id="socialicons"> 
+                    <a class="card-link" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                  </div>
+                </div>
+               <!-- <div class="card-body">
+                   
+               </div> -->
+            </div>
+
+            <div class="card text-white" id="maincard">
+                <div class="frontcard">
+                <img src="img/chefs-2.jpg"  class="card-img img-fluid" style="width: 350px; height: 400px;">
+                </div>
+                <div class="card-img-overlay" id="innercard">
+                   <br> <h2 class="card-title text-center">Sarah Jhonson</h2>
+                    <p class="card-text text-center"><i style="color: white;">Patisier</i></p><br>
+                <div class="card-link text-center" id="socialicons"> 
+                    <a class="card-link" href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a class="card-link" href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                  </div>
+                </div>
+               <!-- <div class="card-body">
+                   
+               </div> -->
+            </div>
+
+        </div>
+
+        </div>
+
+       </section>
+
+       <section id="seventh">
+           <br><br>
+          <div class="container">
+             <h5 style="color: white;">CONTACT</h5>
+             <h1 style="color:  rgb(233, 193, 119);">Contact Us</h1>
+
+          </div>
+
+          <br><br>
+
+          <div class="container-fluid">
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43307.31279744564!2d77.00509440349427!3d28.98891367646455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db1ed36000f59%3A0x60c15ea053e8632e!2sCaf%C3%A9%20Today!5e0!3m2!1sen!2sin!4v1616340595441!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="true" loading="lazy"></iframe>
+            </div><br><br>
+
+          </div>
+          <div class="m-5">
+          <div class="row">
+            <div class="col-md-5">
+
+                <h3><i class="fa fa-map-marker mr-1" aria-hidden="true"></i>Location:</h3><span>     </span>
+                <p>Rohtak Road, INDIA, IN 535022</p></span><br>
+
+                <h3><i class="far fa-clock"></i><span>   </span>Open Hours:</h3>
+                <p>Monday-Saturday:
+                    11:00 AM - 23:00 PM</p><br>
+
+                <h3><i class="far fa-envelope mr-1"><span>  </span></i>Email:</h3>
+                <p>info@example.com</p><br>
+
+                <h3><i class="fas fa-phone-alt mr-1"><span>  </span>  </i>Call:</h3>
+                <p>+91 866534389</p><br>
+
+              
+            </div>
+            <div class="col-md-7">
+                <form class="">
+
+                    <div class="form-row">
+                     <div class="col">   
+                    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="YOUR NAME" required>
+                </div>
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="YOUR EMAIL" required>
+                </div>
+                    </div><br>
+                    <div class="form-row">
+                        <div class="col">   
+                       <input type="text" class="form-control mb-2 mr-sm-2" placeholder="SUBJECT" required>
+                   </div>
+                 
+                       </div><br><br>
+    
+                      <textarea class="form-control" rows="8" placeholder="MESSAGE" ></textarea><br>
+    
+                    <center><button type="submit" class="btn p-3">Send Message</button></center>
+    
+                 </form>
+            </div>
+          </div>
+        </div>
+        <hr style="background-color: rgb(95, 63, 32);">
+        <br><br>
+        
+       </section>
+       <section id="eight" class="container-fluid ">
+        <div class="container-fluid ">  
+         <div class="row ml-5">
+
+            <div class="col-md-3 ">
+              <p style="font-size: 30px; color: thistle;">CORE CAFE</p>
+              <p style="color: cornsilk;">A108 Adam Street<br>
+                NY 535022, INDIA<br><br>
+                
+                Phone: +91 998952976<br>
+                Email: info@example.com</p>
+            </div>
+            <div class="col-md-2 ">
+              <h5>Useful Links</h5><br>
+              <ul>
+                  <li><a href="#">Home</a></li><br>
+                  <li><a href="#">About us</a></li><br>
+                  <li><a href="#">Services</a></li><br>
+                  <li><a href="#">Terms Of Service</a></li><br>
+                  <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Our Services</h5><br>
+              <ul>
+                  <li><a href="#">Web Design</a></li><br>
+                  <li><a href="#">Web Development</a></li><br>
+                  <li><a href="#">Product Management</a></li><br>
+                  <li><a href="#">Marketing</a></li><br>
+                  <li><a href="#">Graphic Design</a></li><br>
+              </ul>
+            </div>
+            <div class="col-md-5">
+               <h5>Our Newsletter</h5><br>
+               <p style="font-size: large;">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p><br>
+               <form class="form-row">
+                   <diV class="col">
+               <input type="text" class="form-control form-control-lg">
+            </diV>
+            <div class="col">
+               <button type="button" class="btn">Subscribe</button>
+            </div>
+            </form><br><br>
+            </div>
+
+         </div>
+        </div>
+       
+        
+
+       </section>
+       <hr style="background-color: rgb(95, 63, 32); margin: 0;">
+       <section id="foot" >
+           <br>
+          <div>
+           <center>  <p style="color: white; font-size: larger;"> <span style="color: aliceblue;">&copy;  </span>Copyright <b>CORE CAFE</b>. All Rights Reserved</p>
+            <p style="color: white; font-size: large;">Designed by <span>BootstrapMade</span></p></center>
+          </div><br>
+       </section>
+    </div>
+    </body>
+
+</html>    
